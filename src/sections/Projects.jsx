@@ -8,14 +8,15 @@ const Projects = () => {
   const springX = useSpring(x, { damping: 10, stiffness: 50 });
   const springY = useSpring(y, { damping: 10, stiffness: 50 });
   const handleMouseMove = (e) => {
-    x.set(e.clientX + 20);
-    y.set(e.clientY + 20);
+    x.set(e.clientX );
+    y.set(e.clientY );
   };
   const [preview, setPreview] = useState(null);
   return (
     <section
       onMouseMove={handleMouseMove}
       className="relative c-space section-spacing"
+      id="project"
     >
       <h2 className="text-heading">My Selected Projects</h2>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full" />
