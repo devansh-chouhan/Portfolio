@@ -8,8 +8,8 @@ const Projects = () => {
   const springX = useSpring(x, { damping: 10, stiffness: 50 });
   const springY = useSpring(y, { damping: 10, stiffness: 50 });
   const handleMouseMove = (e) => {
-    x.set(e.clientX );
-    y.set(e.clientY );
+    x.set(e.clientX + 20);
+    y.set(e.clientY + 20);
   };
   const [preview, setPreview] = useState(null);
   return (
