@@ -1,10 +1,10 @@
 import { twMerge } from "tailwind-merge";
 import Marquee from "../components/Marquee";
-import { reviews } from "../constants";
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+import { highlights } from "../constants";
+const firstRow = highlights.slice(0, highlights.length / 2);
+const secondRow = highlights.slice(highlights.length / 2);
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ title , description }) => {
   return (
     <figure
       className={twMerge(
@@ -12,21 +12,13 @@ const ReviewCard = ({ img, name, username, body }) => {
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img
-          className="rounded-full bg-white/10"
-          width="32"
-          height="32"
-          alt=""
-          src={img}
-        />
         <div className="flex flex-col">
-          <figcaption className="text-sm font-medium text-white">
-            {name}
+          <figcaption className="text-lg font-bold text-white">
+            {title}
           </figcaption>
-          <p className="text-xs font-medium text-white/40">{username}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm">{description}</blockquote>
     </figure>
   );
 };
@@ -34,7 +26,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 export default function Testimonial() {
   return (
     <div className="items-start mt-25 md:mt-35 c-space">
-      <h2 className="text-heading">Hear From My Clients</h2>
+      <h2 className="text-heading">Core Strengths & Achievements</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (

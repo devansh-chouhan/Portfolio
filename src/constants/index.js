@@ -115,22 +115,21 @@ export const myProjects = [
   },
 ];
 
-
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
+    name: "Github",
+    href: "https://github.com/devansh-chouhan",
+    icon: "/assets/socials/github.webp",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/devansh-chouhan",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
-    icon: "/assets/socials/instagram.svg",
+    name: "Leetcode",
+    href: "https://leetcode.com/devanshchouhan",
+    icon: "/assets/socials/leetcode.png",
   },
 ];
 
@@ -167,53 +166,45 @@ export const experiences = [
   },
 ];
 
-export const reviews = [
+export const highlights = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
+    title: "Quick Learner",
+    description:
+      "Picked up full-stack skills and blockchain development within months.",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
+    title: "Builder Mindset",
+    description:
+      "Created real projects like a real estate app, Ethereum dApp, and a hackathon solution.",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
+    title: "Team Collaborator",
+    description:
+      "Worked with teams during internship and hackathon with effective coordination.",
   },
   {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
+    title: "Problem Solver",
+    description:
+      "Solved 500+ coding problems on LeetCode, strengthening data structures and algorithms knowledge.",
   },
   {
-    name: "Bob",
-    username: "@bob",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
+    title: "Emerging Tech Explorer",
+    description:
+      "Exploring fields like Blockchain, Machine Learning, and Data Science through hands-on projects and self-learning.",
   },
   {
-    name: "Charlie",
-    username: "@charlie",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
+    title: "Consistent Learner",
+    description:
+      "Regularly upgrade skills through self-learning, online courses, and project-based practice.",
   },
   {
-    name: "Dave",
-    username: "@dave",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
+    title: "UI Enthusiast",
+    description:
+      "Enjoys crafting responsive, modern UIs using React, Tailwind CSS, and Three.js.",
   },
   {
-    name: "Eve",
-    username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
+    title: "Goal-Oriented",
+    description:
+      "Focuses on completing meaningful, functional projects rather than just tutorials.",
   },
 ];
